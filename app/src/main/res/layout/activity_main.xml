@@ -14,39 +14,113 @@
     <LinearLayout
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:background="#AE000000"
+        android:background="#AE858585"
         android:orientation="vertical"
         android:padding="10dp">
 
-        <Button
-            android:id="@+id/button"
+        <TextView
+            android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:backgroundTint="#f03016"
-            android:text="Sign in with Google+"
-            android:textAllCaps="false"/>
+            android:layout_weight="1"
+            android:text="Calculatrice"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:layout_marginBottom="10sp"/>
 
-        <Button
-            android:id="@+id/button2"
+        <EditText
+            android:id="@+id/number1Input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:backgroundTint="#00a2d2"
-            android:text="Sign in with Twitter"
-            android:textAllCaps="false"/>
+            android:layout_marginBottom="6sp"
+            android:layout_weight="1"
+            android:background="#E4303030"
+            android:ems="10"
+            android:inputType="number"
+            android:paddingLeft="5sp"
+            android:singleLine="false"
+            android:hint="Nombre 1"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
 
-        <Button
-            android:id="@+id/button3"
+        <EditText
+            android:id="@+id/number2Input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:backgroundTint="#46529f"
-            android:text="Sign in with Facebook"
-            android:textAllCaps="false"/>
+            android:layout_marginBottom="6sp"
+            android:layout_weight="1"
+            android:background="#E4303030"
+            android:ems="10"
+            android:inputType="number"
+            android:paddingLeft="5sp"
+            android:hint="Nombre 2"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/resultView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Résultat"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:background="#E4303030"
+            android:layout_marginBottom="6sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="+"
+                android:backgroundTint="#000561"
+                android:textSize="20sp"
+                android:layout_marginHorizontal="5sp"
+                android:onClick="calc"/>
+
+            <Button
+                android:id="@+id/minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="-"
+                android:backgroundTint="#17BAAC"
+                android:textSize="20sp"
+                android:layout_marginHorizontal="5sp"
+                android:onClick="calc"/>
+
+            <Button
+                android:id="@+id/divide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="/"
+                android:backgroundTint="#8BAF04"
+                android:textSize="20sp"
+                android:layout_marginHorizontal="5sp"
+                android:onClick="calc"/>
+
+            <Button
+                android:id="@+id/multiply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#C50000"
+                android:text="X"
+                android:textSize="20sp"
+                android:layout_marginHorizontal="5sp"
+                android:onClick="calc"/>
+        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>
